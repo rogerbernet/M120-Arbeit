@@ -1,0 +1,23 @@
+.topnav{
+    background-color: lightcoral;
+    height: 40px;
+    margin: 0;
+}
+.login{
+    position: absolute; 
+    right: 10px;
+    margin-right: 10;
+    color: white;
+    font: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.nav{
+    margin-top: 10px;
+    color: white;
+    font: bold;
+    font-size: 20px;
+}
+body{
+    background-color: lightgrey;
+}
