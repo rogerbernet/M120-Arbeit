@@ -21,3 +21,15 @@
 body{
     background-color: lightgrey;
 }
+a{
+    color: red;
+    font-size: 50px;
+}
+table{
+border-collapse: collapse;
+color: black;
+}
+
+table:last-child{
+    border-left: none;
+}

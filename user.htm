@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User</title>
+</head>
+<body>
+    <div>
+        <button type="button" id="statistik">Statistik anzeigen</button>
+    </div>
+    <div id="div_statistik" style="visibility: hidden;">
+        <table class="table">
+            <tr>
+                <th>Datum</th>
+                <th>Von</th>
+                <th>Bis</th>
+                <th>PersonId</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>     
+        </table>
+    </div>
+</body>
+<script>
+
+    window.addEventListener("load", function() {
+     if (document.getElementById("statistik")) {
+      document.getElementById("statistik").addEventListener("click", statistik);
+     }
+    });
+    function statistik(){
+        document.getElementById("div_statistik").style.visibility = "visible"
+    }
+
+    function test() {
+     alert('Test!');
+    }
+    </script>
+</html>
