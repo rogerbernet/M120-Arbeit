@@ -8,24 +8,24 @@
     <title>User</title>
 </head>
 <body>
+    <div class="topnav">
+        <a class="nav" href="index.htm">Home</a>
+    </div>
     <div>
-        <button type="button" id="statistik">Statistik anzeigen</button>
+        <button class="button" type="button" id="statistik">Statistik anzeigen</button>
+        <button class="button" type="button" id="absenz">Statistik anzeigen</button>
     </div>
     <div id="div_statistik" style="visibility: hidden;">
-        <table class="table">
+        <table class="customTable">
             <tr>
                 <th>Datum</th>
                 <th>Von</th>
                 <th>Bis</th>
                 <th>PersonId</th>
             </tr>
-            <tr>
                 <td></td>
-            </tr>
-            <tr>
                 <td></td>
-            </tr>
-            <tr>
+                <td></td>
                 <td></td>
             </tr>     
         </table>
@@ -41,9 +41,5 @@
     function statistik(){
         document.getElementById("div_statistik").style.visibility = "visible"
     }
-
-    function test() {
-     alert('Test!');
-    }
-    </script>
+</script>
 </html>
