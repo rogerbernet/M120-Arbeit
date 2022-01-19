@@ -56,3 +56,13 @@ table.customTable {
     margin-top: 2%;
     margin-left: 2%;
 }
+
+.inhalt{
+    width: 40%;
+    background-color: #ADADAD;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #999999;
+    border-style: solid;
+    color: white;
+}
