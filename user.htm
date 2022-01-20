@@ -15,6 +15,7 @@
     <div>
         <button class="button" type="button" id="statistik">Statistik anzeigen</button>
         <button class="button" type="button" id="absenz">Absenz erfassen</button>
+        <button class="button" type="button" id="arbeitszeit">Arbeitszeit erfassen</button>
     </div>
     <div class="div_statistik" id="div_statistik" style="visibility: hidden;">
         <table class="customTable">
@@ -32,18 +33,19 @@
         </table>
     </div>
     <div class="div_absenz" id="div_absenz" style="visibility:hidden;">
-        <table>
+        <div class="inhalt">
+        <table style="width: 100%;">
             <tr>
             <td>
-                <label>Datum</label>
+                <label >Datum</label>
                 <input class="absenz_date" type="text"></td>
             </td>
-            <td></td>
             </tr>
-            <td>
-                <label>Von</label>
-                <input type="text">
-            </td>
+            <tr>
+                <td>
+                    <label>Von</label><input type="text">
+                </td>
+            </tr>
             <tr>
             <td>
                 <label>Bis</label>
@@ -68,6 +70,20 @@
             </td>
             </tr>
         </table>
+        </div>
+    </div>
+    <div class="div_arbeitszeit" id="div_arbeitszeit" style="visibility: hidden;">
+        <div class="inhalt">
+        <label>Datum</label><input type="text">
+        <br>
+        <label>Von</label><input type="text">
+        <br>
+        <label>Bis</label><Input type="text"></Input>
+        <br>
+        <label>Projekt</label><input type="text">
+        <br>
+        <button class="erfassen" style="margin-left: 90%;">Erfassen</button>
+        </div>
     </div>
 </body>
 <script>
@@ -79,18 +95,33 @@
      if(document.getElementById("absenz")){
         document.getElementById("absenz").addEventListener("click", absenz)
      }
+     if(document.getElementById("arbeitszeit")){
+         document.getElementById("arbeitszeit").addEventListener("click", arbeitszeit)
+     }
     });
     function statistik(){
         document.getElementById("div_statistik").style.visibility = "visible";
-        document.getElementById("div_absenz").style.visibility= "hidden";
         document.getElementById("div_statistik").style.height = "180px";
+        small("div_absenz");
+        small("div_arbeitszeit");
 
     }
     function absenz(){
-        document.getElementById("div_statistik").style.visibility = "hidden";
-        document.getElementById("div_statistik").style.height = "0px";
-        document.getElementById("div_absenz").style.visibility= "visible";
-        document.getElementById("div_absenz").style.height= "220px";
+        document.getElementById("div_absenz").style.visibility = "visible";
+        // document.getElementById("div_absenz").style.height= "220px";
+        small("div_statistik");
+        small("div_arbeitszeit");
+    }
+    function arbeitszeit(){
+        document.getElementById("div_arbeitszeit").style.visibility= "visible";
+        // document.getElementById("div_arbeitszeit").style.height="220px";
+        small("div_absenz");
+        small("div_statistik");
+    }
+    function small(Klasse){
+        //Schrumpft ein Div auf grösse 0 und lässt es verschwinden
+        document.getElementById(Klasse).style.visibility = "hidden"
+        document.getElementById(Klasse).style.height = "0px"
     }
 </script>
 </html>
