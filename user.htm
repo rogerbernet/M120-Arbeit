@@ -86,42 +86,5 @@
         </div>
     </div>
 </body>
-<script>
-
-    window.addEventListener("load", function() {
-     if (document.getElementById("statistik")) {
-      document.getElementById("statistik").addEventListener("click", statistik);
-     }
-     if(document.getElementById("absenz")){
-        document.getElementById("absenz").addEventListener("click", absenz)
-     }
-     if(document.getElementById("arbeitszeit")){
-         document.getElementById("arbeitszeit").addEventListener("click", arbeitszeit)
-     }
-    });
-    function statistik(){
-        document.getElementById("div_statistik").style.visibility = "visible";
-        document.getElementById("div_statistik").style.height = "180px";
-        small("div_absenz");
-        small("div_arbeitszeit");
-
-    }
-    function absenz(){
-        document.getElementById("div_absenz").style.visibility = "visible";
-        // document.getElementById("div_absenz").style.height= "220px";
-        small("div_statistik");
-        small("div_arbeitszeit");
-    }
-    function arbeitszeit(){
-        document.getElementById("div_arbeitszeit").style.visibility= "visible";
-        // document.getElementById("div_arbeitszeit").style.height="220px";
-        small("div_absenz");
-        small("div_statistik");
-    }
-    function small(Klasse){
-        //Schrumpft ein Div auf grösse 0 und lässt es verschwinden
-        document.getElementById(Klasse).style.visibility = "hidden"
-        document.getElementById(Klasse).style.height = "0px"
-    }
-</script>
+<script src="script.js"> </script>
 </html>
