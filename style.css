@@ -1,5 +1,5 @@
 .topnav{
-    background-color: #E6A1A1;
+    background-color: darkblue;
     height: 40px;
     margin: 0;
 }
@@ -17,9 +17,12 @@
     color: white;
     font: bold;
     font-size: 20px;
+
 }
 body{
-    background-color: lightgrey;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 a{
     color: red;
@@ -47,7 +50,7 @@ table.customTable {
 .button{
     border-color: transparent;
     color: white;
-    background-color: #614444;
+    background-color: blue;
     font: bold;
     font-size: large;
     border-radius: 12px;
@@ -78,11 +81,12 @@ label{
 }
 
 .inhalt{
-    width: 40%;
+    width: 50%;
     background-color: #ADADAD;
     border-collapse: collapse;
     border-width: 1px;
     border-color: #999999;
     border-style: solid;
     color: white;
+
 }
