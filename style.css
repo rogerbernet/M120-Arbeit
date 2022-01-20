@@ -32,7 +32,7 @@ a{
 
 table.customTable {
     width: 50%;
-    background-color: #ADADAD;
+    background-color: lightblue;
     border-collapse: collapse;
     border-width: 1px;
     border-color: #999999;
@@ -75,6 +75,7 @@ table.customTable {
     color: white;
     border-radius: 16px;
     border: none;
+    margin-left: 80%;
 }
 
 label{
@@ -83,11 +84,17 @@ label{
 
 .inhalt{
     width: 50%;
-    background-color: #ADADAD;
+    background-color: lightblue;
     border-collapse: collapse;
     border-width: 1px;
     border-color: #999999;
     border-style: solid;
     color: white;
 
+}
+td{
+    border-radius: 12px;
+}
+.div_absenz{
+    width: 50%;
 }
