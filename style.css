@@ -56,20 +56,33 @@ table.customTable {
     margin-top: 2%;
     margin-left: 2%;
 }
+
 .div_statistik{
     margin-top: 3%;
 }
+
 .div_absenz{
     background-color: #ADADAD;
     width: 50%;
 }
+
 .erfassen{
     background-color: #3B3B3B;
     color: white;
     border-radius: 16px;
     border: none;
-
 }
+
 label{
     margin-right: 1%;
+}
+
+.inhalt{
+    width: 40%;
+    background-color: #ADADAD;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #999999;
+    border-style: solid;
+    color: white;
 }
